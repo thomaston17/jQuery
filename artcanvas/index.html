@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Art Canvas</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<canvas width="600px" height="400px" id="canvas"></canvas>
+<div class="controls">
+  <div>
+    <span class="line-slider"><input id="line-size" name="line-size" type="range" min=2 max=14 value=5></span>
+  </div>
+  <div class="select-color">
+    <ul>
+      <li class="red selected"></li>
+      <li class="green"></li>
+      <li class="blue"></li>
+    </ul>
+  </div>
+  <div class="new-color">
+    <button class="new-color-btn">New Color</button>
+    <div class="anim-wrap">
+      <span class="triangle"></span>
+      <div class="add-color">
+        <span class="color-preview"></span>
+        <div class="rgb-sliders">
+          <p>
+            <label for="red">Red</label>
+            <input id="red" name="red" type="range" min=0 max=255 value=0>
+          </p>
+          <p>
+            <label for="green">Green</label>
+            <input id="green" name="green" type="range" min=0 max=255 value=0>
+          </p>
+          <p>
+            <label for="blue">Blue</label>
+            <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+          </p>
+        </div>
+        <div>
+          <button class="add-color-btn">Add Color</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>  
+</body>
+</html>
