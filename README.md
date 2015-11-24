@@ -1,4 +1,4 @@
 # jQuery
 
 Description:
-Contains projects made with jQuery.
+Contains a library of projects made with jQuery.
